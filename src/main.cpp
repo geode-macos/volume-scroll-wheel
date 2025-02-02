@@ -135,7 +135,7 @@ class $modify(CCMouseDispatcher) {
 	bool dispatchScrollMSG(float y, float x) {
 		auto kb = CCKeyboardDispatcher::get();
 		if (kb->getAltKeyPressed()) {
-        	VolumeControlOverlay::get()->updateValue(-y, kb->getControlKeyPressed(), kb->getShiftKeyPressed());
+        	VolumeControlOverlay::get()->updateValue(-y, kb->getControlKeyPressed() GEODE_MACOS(|| kb->getCommandKeyPressed()), kb->getShiftKeyPressed());
 			return true;
 		}
 		return CCMouseDispatcher::dispatchScrollMSG(y, x);

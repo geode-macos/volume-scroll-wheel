@@ -1,3 +1,3 @@
 # Quick Volume Controls
 
-Quickly change your volume level by holding Alt and using your scroll wheel! Use Shift to change SFX volume & Control for more precise control.
+Quickly change your volume level by holding Alt (Option on macOS) and using your scroll wheel! Use Shift to change SFX volume & Control (or Command on macOS) for more precise control.
